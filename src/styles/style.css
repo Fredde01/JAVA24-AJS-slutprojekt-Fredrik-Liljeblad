@@ -1,0 +1,81 @@
+body {
+    background-color: black; 
+    color: white;
+    display:flex;
+    justify-content: center;
+    
+}
+
+h1 {
+    text-align: center;
+}
+
+
+.task-card {
+    border:2px solid black;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fieldset-wrapper {
+    display:flex;
+    justify-content: center;
+    margin: 2vh;    
+}
+
+fieldset {
+    display:flex;
+    width: 50vw;
+    gap: 3vw;
+}
+
+
+.task-wrapper {
+    display:flex;
+    gap: 5vw;
+}
+
+.task-container {
+    text-align:center;
+    display:flex;
+    justify-content:flex-start;
+    flex-direction: column;
+    height: 50vh;
+    width:20vw;
+    border-radius: 2vh;
+    margin-top: 4vh;
+    overflow-y:auto;
+}
+
+.task-container.new {
+    background-color: blue;
+}
+
+.task-container.in-progress {
+    background-color: orange;
+}
+
+.task-container.finished {
+    background-color: green;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.filters label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  max-width: 5rem;
+}
+
+.filters select {
+  padding: 4px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
